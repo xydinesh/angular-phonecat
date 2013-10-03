@@ -10,4 +10,4 @@ function PhoneListCtrl($scope, $http) {
   $scope.orderProp = 'age';
 }
 
-//PhoneListCtrl.$inject = ['$scope', '$http'];
+angular.module('phonecatApp', []).controller('PhoneListCtrl', ['$scope', '$http', PhoneListCtrl]);

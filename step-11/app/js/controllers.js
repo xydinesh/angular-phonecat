@@ -7,8 +7,6 @@ function PhoneListCtrl($scope, Phone) {
   $scope.orderProp = 'age';
 }
 
-//PhoneListCtrl.$inject = ['$scope', 'Phone'];
-
 
 
 function PhoneDetailCtrl($scope, $routeParams, Phone) {
@@ -21,4 +19,6 @@ function PhoneDetailCtrl($scope, $routeParams, Phone) {
   }
 }
 
-//PhoneDetailCtrl.$inject = ['$scope', '$routeParams', 'Phone'];
+
+myApp.controller('PhoneListCtrl', ['$scope', 'Phone', PhoneListCtrl]);
+myApp.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Phone', PhoneDetailCtrl]);

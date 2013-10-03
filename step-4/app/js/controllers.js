@@ -17,3 +17,5 @@ function PhoneListCtrl($scope) {
 
   $scope.orderProp = 'age';
 }
+
+angular.module('phonecatApp', []).controller('PhoneListCtrl', PhoneListCtrl);

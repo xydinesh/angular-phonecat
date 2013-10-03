@@ -10,8 +10,6 @@ function PhoneListCtrl($scope, $http) {
   $scope.orderProp = 'age';
 }
 
-//PhoneListCtrl.$inject = ['$scope', '$http'];
-
 
 function PhoneDetailCtrl($scope, $routeParams, $http) {
   $http.get('phones/' + $routeParams.phoneId + '.json').success(function(data) {
@@ -19,4 +17,6 @@ function PhoneDetailCtrl($scope, $routeParams, $http) {
   });
 }
 
-//PhoneDetailCtrl.$inject = ['$scope', '$routeParams', '$http'];
+
+myApp.controller('PhoneListCtrl', ['$scope', '$http', PhoneListCtrl]);
+myApp.controller('PhoneDetailCtrl', ['$scope', '$routeParams', '$http', PhoneDetailCtrl]);

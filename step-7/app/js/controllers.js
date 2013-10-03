@@ -10,11 +10,11 @@ function PhoneListCtrl($scope, $http) {
   $scope.orderProp = 'age';
 }
 
-//PhoneListCtrl.$inject = ['$scope', '$http'];
-
 
 function PhoneDetailCtrl($scope, $routeParams) {
   $scope.phoneId = $routeParams.phoneId;
 }
 
-//PhoneDetailCtrl.$inject = ['$scope', '$routeParams'];
+
+myApp.controller('PhoneListCtrl', ['$scope', '$http', PhoneListCtrl]);
+myApp.controller('PhoneDetailCtrl', ['$scope', '$routeParams', PhoneDetailCtrl]);
