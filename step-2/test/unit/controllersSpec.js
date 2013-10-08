@@ -20,6 +20,6 @@ describe('PhoneCat controllers', function() {
 
       expect(scope.phones.length).toBe(3);
     }));
-	
+
   });
 });
