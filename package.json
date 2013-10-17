@@ -1,8 +1,12 @@
 {
   "name": "angualrjs-seed",
   "description": "A starter project for angular js",
+  "scripts": {
+      "start": "node server.js"
+  },
   "devDependencies": {
         "phantomjs" : "*",
+        "express": "*",
         "karma" : "*",
         "karma-junit-reporter" : "*",    
         "karma-jasmine" : "*",
